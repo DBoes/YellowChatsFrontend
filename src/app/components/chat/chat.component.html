@@ -1,0 +1,24 @@
+<div class="chat__container">
+    <div class="chat">
+        <div class="chat__header">
+            <div class="chat__avatar">
+            </div>
+            YellowChats
+        </div>
+        <div class="chat__dialog">
+            <div class="chat__message" *ngFor="let response of chat">
+                <div class="chat__person">
+                    <p>YellowChat</p>
+                    <div class="chat__icon"></div>
+                </div>
+                <div class="chat__text">
+                    {{ response.message|json }}
+                </div>
+                
+            </div>
+        </div>
+        <div class="chat__input">
+            <app-input></app-input>
+        </div>
+    </div>
+</div>
